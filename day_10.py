@@ -48,7 +48,7 @@ def star_2(puzzle_input):
         for i in range(SIZE // DENSE_SIZE)
     ]
 
-    return "".join("{:02x}".format(digit) for digit in dense_hash)
+    return "".join(f"{digit:02x}" for digit in dense_hash)
 
 
 def run_round(marks, position, skip, lengths):
